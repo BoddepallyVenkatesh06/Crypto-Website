@@ -1,0 +1,108 @@
+.navbar{
+    height: 80px;
+
+    .navbar-brand{
+        .brand-img{
+            width: 30px;
+            margin-right: 12px;
+        }
+        .brand-text{
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+
+    .navbar-show-btn{
+        width: 24px;
+        display: none;
+        cursor: pointer;
+
+        @include breakpoints-down(lg){
+            display: block;
+        }
+    }
+
+    .navbar-list-wrapper{
+        position: relative;
+        transition: $default-transition;
+
+        @include breakpoints-down(lg){
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 280px;
+            height: 100%;
+            background-color: #000;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 48px 16px;
+            transform: translateX(100%);
+
+            &.show{
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .nav-list{
+        .nav-item{
+            margin-left: 32px;
+            
+            @include breakpoints-down(lg){
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+        }
+
+        .nav-link{
+            font-weight: 600;
+        }
+
+        @include breakpoints-down(lg){
+            flex-direction: column;
+            width: 100%;
+            margin-top: 48px;
+        }
+    }
+
+    .navbar-hide-btn{
+        width: 24px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+
+        @include breakpoints-up(lg){
+            display: none;
+        }
+    }
+
+    .sign-btns{
+        margin-left: 186px;
+
+        .btn{
+            &:last-child{
+                margin-left: 12px;
+
+                @include breakpoints-down(lg){
+                    margin-left: 0;
+                    margin-top: 16px;
+                }
+            }
+
+            @include breakpoints-down(lg){
+                min-width: 200px;
+            }
+        }
+
+        @include breakpoints-down(lg){
+            margin-left: 0;
+            margin-top: 20px;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+// color palette
+$white: #fff;
+$lavender: #b982ff;
+$cool-grey: #babcd0;
+$mint: #0dbb7c;
+$light-red: #ff8282;
+$dark: #1b1b1b;
+$raisin-black: #1a1b23;
+$veronica-gradient: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+
+$default-transition: all 300ms ease-in-out;
+// @media screen and (min-width: value){}
+$breakpoints-up: (
+    "xs": "480px",
+    "sm": "576px",
+    "md": "768px",
+    "lg": "992px",
+    "xl": "1200px",
+    "xxl": "1400px"
+);
+
+// @media screen and (max-width: value){}
+$breakpoints-down: (
+    "xs": "479.98px",
+    "sm": "575.98px",
+    "md": "767.98px",
+    "lg": "991.98px",
+    "xl": "1199.98px",
+    "xxl": "1399.98px"
+);

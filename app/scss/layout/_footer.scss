@@ -1,0 +1,65 @@
+.footer{
+    padding-bottom: 24px;
+
+    &-content{
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 48px 32px;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 20px;
+
+        @include breakpoints-down(lg){
+            padding: 32px 24px;
+        }
+
+        @include breakpoints-down(md){
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include breakpoints-down(xs){
+            padding: 20px 16px;
+        }
+    }
+
+    .footer-item{
+        &-title{
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .footer-link{
+            display: block;
+            margin-bottom: 18px;
+            transition: $default-transition;
+            &:hover{
+                color: $white;
+            }
+        }
+
+        &:nth-child(1){
+            p.text{
+                margin-bottom: 18px;
+            }
+
+            form{
+                margin-bottom: 18px;
+                .input-group{
+                    max-width: 400px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &:nth-child(2){
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @include breakpoints-down(md){
+            text-align: center;
+
+            form{
+                justify-content: center;
+            }
+        }
+    }
+}

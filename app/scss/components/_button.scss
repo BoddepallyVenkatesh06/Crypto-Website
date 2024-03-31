@@ -1,0 +1,45 @@
+.btn{
+    height: 40px;
+    outline: 1px solid $white;
+    border-radius: 10px;
+    min-width: 96px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 600;
+    transition: $default-transition;
+
+    &:hover{
+        opacity: 0.9;
+    }
+
+    &-base{
+        height: 56px;
+        min-width: 156px;
+
+        @include breakpoints-down(sm){
+            height: 50px;
+        }
+    }
+
+    &-g-blue-veronica{
+        background: $veronica-gradient;
+        outline: none;
+    }
+
+    &-link{
+        .link-icon{
+            width: 24px;
+            margin-left: 6px;
+        }
+        .link-text{
+            transition: $default-transition;
+            color: $lavender;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}

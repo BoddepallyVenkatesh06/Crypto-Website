@@ -1,0 +1,153 @@
+.page-wrapper{
+    background: url('../../assets/images/bg-full.png') top/cover no-repeat;
+    overflow: hidden;
+}
+
+.page-sc-one{
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+    .sc-one-content{
+        .title-wrapper{
+            max-width: 780px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .text{
+            padding-top: 16px;
+            padding-bottom: 32px;
+        }
+    }
+
+    @include breakpoints-down(lg){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoints-down(lg){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.page-sc-two{
+    position: relative;
+    z-index: 1;
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+    .sc-two-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        @include breakpoints-down(md){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .sc-two-right{
+        max-width: 580px;
+        p.text{
+            padding-top: 16px;
+            padding-bottom: 24px;
+        }
+
+        @include breakpoints-down(md){
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+    }
+
+    @include breakpoints-down(lg){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoints-down(lg){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.page-sc-fees{
+    padding-top: 180px;
+    padding-bottom: 100px;
+
+    .sc-fees-content{
+        .title-wrapper{
+            max-width: 780px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        p.text{
+            max-width: 580px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 16px;
+            padding-bottom: 32px;
+        }
+    }
+
+    @include breakpoints-down(lg){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoints-down(lg){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.page-sc-invest{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .sc-two-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include breakpoints-down(md){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .sc-two-left{
+        max-width: 500px;
+        p.text{
+            padding-top: 16px;
+            padding-bottom: 24px;
+        }
+
+        @include breakpoints-down(md){
+            text-align: center;
+        }
+    }
+
+    @include breakpoints-down(sm){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.page-sc-subscribe{
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    .sc-subscribe-content{
+        p.text{
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+    }
+
+    @include breakpoints-down(sm){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+

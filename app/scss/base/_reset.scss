@@ -1,0 +1,61 @@
+// some basic resets
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: $white;
+    font-weight: 400;
+    height: 100%;
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+    transition: $default-transition;
+
+    &:focus,
+    &:hover{
+        color: unset;
+    }
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    width: 100%;
+}
+input,
+button,
+textarea,
+select{
+    font: inherit;
+    outline: 0;
+}
+textarea{
+    resize: none;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}

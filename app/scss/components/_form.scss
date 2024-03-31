@@ -1,0 +1,51 @@
+.input-group{
+    position: relative;
+    padding: 17.5px 20px;
+    height: 60px;
+    max-width: 305px;
+
+    @include breakpoints-down(sm){
+        min-width: 100%;
+        width: 100%;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        background: $veronica-gradient;
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+    }
+
+    .input-control{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        position: relative;
+        z-index: 1;
+        color: $white;
+        caret-color: $white;
+
+        &::placeholder{
+            color: #565976;
+            @include breakpoints-down(sm){
+                font-size: 16px;
+            }
+        }
+    }
+
+    .input-btn{
+        position: relative;
+        z-index: 1;
+        img{
+            opacity: 0.2;
+        }
+    }
+}

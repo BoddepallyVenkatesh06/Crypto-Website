@@ -1,0 +1,118 @@
+.header-wrapper{
+    position: relative;
+}
+.header{
+    &-content{
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-intro{
+        max-width: 780px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 170px;
+        padding-bottom: 192px;
+
+        h1{
+            font-size: 85px;
+            font-weight: 900;
+            margin-bottom: 100px;
+
+            @include breakpoints-down(lg){
+                font-size: 48px;
+            }
+
+            @include breakpoints-down(sm){
+                font-size: 40px;
+            }
+        }
+
+        @include breakpoints-down(lg){
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+}
+
+.info{
+    position: relative;
+    z-index: 0;
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    &-content{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @include breakpoints-down(lg){
+            grid-template-columns: repeat(2, 1fr);
+
+            .info-item{
+                &:last-child{
+                    width: 50%;
+                    grid-column: 1/3;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        @include breakpoints-down(md){
+            grid-template-columns: repeat(1, 1fr);
+            .info-item{
+                &:last-child{
+                    width: 100%;
+                    grid-column: 1/2;
+                }
+            }
+        }
+    }
+
+    &-item{
+        padding: 32px 24px;
+        background-color: $raisin-black;
+        border-radius: 24px;
+
+        img{
+            width: 80px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &-title{
+            font-size: 32px;
+            font-weight: 800;
+            margin-top: 20px;
+
+            @include breakpoints-down(lg){
+                font-size: 28px;
+            }
+            @include breakpoints-down(sm){
+                font-size: 24px;
+            }
+        }
+
+        &-text{
+            padding-top: 16px;
+            padding-bottom: 32px;
+            margin-right: auto;
+            margin-left: auto;
+
+            @include breakpoints-down(md){
+                max-width: 480px;
+            }
+        }
+    }
+    
+
+    @include breakpoints-down(lg){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoints-down(sm){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

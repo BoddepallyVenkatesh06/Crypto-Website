@@ -1,0 +1,20 @@
+// importing all files
+// from abstracts folder
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/utilities';
+// from base folder
+@import 'base/reset';
+@import 'base/typography';
+// from components folder
+@import 'components/button';
+@import 'components/table';
+@import 'components/form';
+// from layout folder
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/footer';
+// from pages folder
+@import "pages/index";
+
+// the output folder of the compiled sass is dist > main.css

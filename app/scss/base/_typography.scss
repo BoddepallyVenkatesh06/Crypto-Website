@@ -1,0 +1,53 @@
+// font-family: 'Inter', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6{
+    margin-top: 12px;
+}
+.text-sm{
+    font-size: 14px;
+}
+.text-base{
+    font-size: 16px;
+}
+.text-lg{
+    font-size: 20px;
+}
+
+@include breakpoints-down(lg){
+    .text-sm{
+        font-size: 13px!important;
+    }
+    .text-base{
+        font-size: 15px!important;
+    }
+    .text-lg{
+        font-size: 18px!important;
+    }
+}
+
+@include breakpoints-down(sm){
+    .text-sm{
+        font-size: 12px!important;
+    }
+    .text-base{
+        font-size: 14px!important;
+    }
+    .text-lg{
+        font-size: 16px!important;
+    }
+}
